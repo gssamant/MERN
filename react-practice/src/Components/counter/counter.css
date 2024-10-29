@@ -1,0 +1,18 @@
+p{
+	color: black;
+}
+
+.counter-container{
+	width: 500px;
+	background-color: bisque;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+#button {
+	height: 10%;
+}

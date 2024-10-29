@@ -1,0 +1,13 @@
+#ul-container{
+	background-color: beige;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+	padding: 10px;
+	gap: 20px;
+}
+
+.active{
+	border: 1px solid orange;
+}

@@ -1,0 +1,11 @@
+body{
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#eh-container{
+	background-color: rgb(180, 180, 37);
+	padding: 10px;
+}

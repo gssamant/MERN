@@ -1,0 +1,15 @@
+body{
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-error{
+	border: 2px solid red;
+}
+
+.error-msg{
+	background-color: white;
+	color: red;
+}

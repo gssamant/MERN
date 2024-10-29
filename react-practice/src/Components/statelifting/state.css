@@ -1,0 +1,9 @@
+body{
+	height: 50vh;
+}
+
+#state-container{
+	padding: 10px;
+	font-size: larger;
+	background-color: bisque;
+}
