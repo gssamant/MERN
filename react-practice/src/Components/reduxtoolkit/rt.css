@@ -1,0 +1,13 @@
+body {
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-container{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	
+}
