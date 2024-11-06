@@ -6,10 +6,16 @@ const url = require("url");
 const express = require("express");
 const app = express();
 app.get("/", (req, res) => {
-	res.send(`Hello ${req.query.name}`);
+	res.send("Home page");
 })
 app.get("/about", (req, res) => {
-	res.send("About page")
+	const name = req.query.name;
+	if (name) {
+		res.send(`Hello ${name}`)
+	}
+	else {
+		res.send("Hello")
+	}
 })
 app.listen(3000, () => {})
 
