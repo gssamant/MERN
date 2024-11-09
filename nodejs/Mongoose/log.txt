@@ -1,0 +1,14 @@
+
+1731136080642:::1 GET: /api/users/
+
+1731136200132:::1 POST: /api/users/
+
+1731136205528:::1 GET: /api/users/
+
+1731136231138:::1 PATCH: /api/users/672f0ac80919f52cc86e7fd3
+
+1731136242249:::1 GET: /api/users/
+
+1731136268278:::1 DELETE: /api/users/672f0ac80919f52cc86e7fd3
+
+1731136271678:::1 GET: /api/users/
