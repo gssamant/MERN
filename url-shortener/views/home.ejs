@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShortURL</title>
+  </head>
+  <body>
+    <div style="margin: 10px">
+      <a
+        href="/"
+        style="text-decoration: none; color: inherit; font-size: xx-large"
+        >URL Shortener</a
+      >
+    </div>
+    <div style="padding-left: 10px">
+      <form method="POST" action="/url">
+        <label>Enter the original URL</label>
+        <input type="text" name="url" placeholder="https://example.com" />
+        <button>Generate</button>
+      </form>
+    </div>
+    <div style="padding-left: 10px; margin-top: 10px">
+      <% if (locals.id) { %>
+      <p>
+        URL generated:
+
+        <span id="redirecturl" style="color: blue;">http://localhost:3000/redirect/<%= id %> </span>
+        <button onclick="copyToClipboard()">Copy</button>
+      </p>
+      <% } %>
+    </div>
+  </body>
+  <script>
+	if(performance.navigation.type === 1) {
+		window.location.href = "/";
+	}
+    function copyToClipboard() {
+      const urlText = document.getElementById("redirecturl").textContent;
+      navigator.clipboard
+        .writeText(urlText)
+        .then(() => {
+          console.log("copied");
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  </script>
+</html>
